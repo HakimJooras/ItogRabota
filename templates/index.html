@@ -5,38 +5,38 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Прогнозирование размеров сварного шва при электронно лучевой сварке
-        тонкостенных конструкций аэрокосмического назначения</h1>
-        <form action='' method='post'>
-            <p>
-                <label for='IW'>Величина сварочного тока (IW)</label>
-                <input type='number' name='IW'>
-            </p>
-            <p>
-                <label for='IF'>Ток фокусировки электронного пучка (IF)</label>
-                <input type='number' name='IF'>
-            </p>
-            <p>
-                <label for='VW'>Скорость сварки (VW)</label>
-                <input type='number' name='VW'>
-            </p>
-            <p>
-                <label for='FP'>Расстояние от поверхности до электронно-оптической системы (FP)</label>
-                <input type='number' name='FP'>
-            </p>
-            <p>
-                <input type='submit' value='Готово'>
-            </p>
+<h1>Прогнозирование размеров сварного шва при электронно лучевой сварке
+    тонкостенных конструкций аэрокосмического назначения</h1>
+<form action='' method='post'>
+    <p>
+        <label for='IW'>Величина сварочного тока (IW)</label>
+        <input type='number' name='IW'>
+    </p>
+    <p>
+        <label for='IF'>Ток фокусировки электронного пучка (IF)</label>
+        <input type='number' name='IF'>
+    </p>
+    <p>
+        <label for='VW'>Скорость сварки (VW)</label>
+        <input type='number' name='VW'>
+    </p>
+    <p>
+        <label for='FP'>Расстояние от поверхности до электронно-оптической системы (FP)</label>
+        <input type='number' name='FP'>
+    </p>
+    <p>
+        <input type='submit' value='Готово'>
+    </p>
 
-            <p>Результат прогноза: </p>
-            {% if depth %}
-            <p>{{ depth }}</p>
-            {% endif %}
-            {% if width %}
-            <p>{{ width }}</p>
-            {% endif %}
+    <p>Результат прогноза: </p>
+    {% if depth %}
+    <p>{{ depth }}</p>
+    {% endif %}
+    {% if width %}
+    <p>{{ width }}</p>
+    {% endif %}
 
 
-        </form>
+</form>
 </body>
 </html>

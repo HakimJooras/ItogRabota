@@ -3,7 +3,6 @@ from flask import Flask, render_template, request
 from tensorflow import keras
 import numpy as np
 
-
 app = Flask(__name__)
 
 
@@ -25,8 +24,8 @@ def prediction():
         depth = f"Глубина шва {pred[0][0]}"
         width = f"Ширина шва {pred[0][1]}"
 
-
     return render_template('index.html', depth=depth, width=width)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
