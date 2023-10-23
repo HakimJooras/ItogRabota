@@ -1,2 +1,18 @@
 /tmp
 /.idea/
+
+// Создать файл .gitignore в корне если его ещё нет (touch в Linux)
+touch .gitignore
+
+// Добавить папку .idea в игнор-лист Гита (или руками - см. выше)
+echo ".idea" > .gitignore
+
+// Удалить все проиндексированные файлы
+git rm -r -f --cached .
+
+// Запустить индексацию заново
+git add .
+
+// Добавляем коммит и пушим
+git commit -m "Deleted folder idea from git"
+git push -u origin master
