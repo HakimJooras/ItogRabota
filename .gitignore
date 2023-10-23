@@ -17,4 +17,3 @@ git add .
 git commit -m "Deleted folder idea from git"
 git push -u origin master
 
-/Как рабает приложение локально.mp4
